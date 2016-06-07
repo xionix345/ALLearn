@@ -6,4 +6,6 @@ import javax.ejb.Local;
 public interface HelloLocal {
 
 	public void sayMsg(String message);
+	
+	public String getHello();
 }

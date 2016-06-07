@@ -13,18 +13,24 @@ import javax.ejb.TransactionManagementType;
 @LocalBean
 public class Hello implements HelloLocal {
 
-    /**
-     * Default constructor. 
-     */
-    public Hello() {
-        // TODO Auto-generated constructor stub
-    }
+	/**
+	 * Default constructor.
+	 */
+	public Hello() {
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public void sayMsg(String message) {
 
 		System.out.println(message);
-		
+
+	}
+
+	@Override
+	public String getHello() {
+
+		return "hello";
 	}
 
 }

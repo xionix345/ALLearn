@@ -34,9 +34,8 @@
         <configuration>
         	<property name="jbossHome">F:/opt/wildfly-10.0.0.Final</property>
         	 
-        	<!-- <property name="serverConfig">F:/opt/wildfly-10.0.0.Final/standalone/configuration/standalone-full.xml</property> 
-        	<property name="javaVmArguments">-Xmx512m -XX:MaxPermSize=128m -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=8787</property>
-        	 -->
+        	<property name="javaVmArguments">-agentlib:jdwp=transport=dt_socket,address=8787,server=y,suspend=y</property>
+        	
         </configuration>
    </container>
 
